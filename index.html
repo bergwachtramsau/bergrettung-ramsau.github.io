@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <link rel="icon" href="Bilder/favicon.ico">
+  <title>Bergrettung Ramsau</title>
+  <meta name="description"
+    content="Die Bergwacht Ramsau stellt die Bergrettung im Nationalpark Berchtesgaden am Watzmann, Hochkalter und der Reiteralpe sicher. Die mehr als 40 Bergretter:innen leisten ehrenamtlich mehr als 100 Einsätze pro Jahr in den Berchtesgadener Alpen.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="UwR4ndPbiOVgMYHwC-Migkkmq37lnC8N3xBZ0HM429I" />
+  <link rel="stylesheet" href="resources/w3.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url('Bilder/Panorama2.jpeg');
+      min-height: 100vh;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("Bilder/Bereitschaftsfoto.jpg");
+      min-height: 600px;
+    }
+
+    /* Third image */
+    .bgimg-3 {
+      background-image: url("Bilder/Ch14.jpg");
+      min-height: 600px;
+    }
+
+    /* Fourth image */
+    .bgimg-4 {
+      background-image: url("Bilder/Panorama1.jpeg");
+      min-height: 600px;
+    }
+
+    /* Fifth image (Contact) */
+    .bgimg-5 {
+      background-image: url("Bilder/Ch1.jpg");
+      min-height: 600px;
+    }
+
+    /* Sixth image */
+    .bgimg-6 {
+      background-image: url("Bilder/ATV.jpg");
+      min-height: 600px;
+    }
+
+    .bwr-wide {
+      letter-spacing: 10px;
+    }
+
+    .bwr-top {
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+      top: 0;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="bwr-top">
+    <div class="w3-bar w3-text-white" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium">STARTSEITE</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container" id="home">
+    <div class="w3-display-topmiddle w3-padding-64">
+      <h3>Seite im Aufbau</h3>
+    </div>
+  </div>
+  <script>
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = navbar.className.replace(" w3-text-white", " w3-card w3-white");
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-white", " w3-text-white");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
